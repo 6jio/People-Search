@@ -1,4 +1,4 @@
-# COMP1004 Coursework
+# People Search
 
 ## HTML
 
