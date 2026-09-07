@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="searchstyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Search</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Vehicle Search</h1>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">People search</a></li>
+            <li><a href="vehiclesearch.html">Vehicle search</a></li>
+            <li><a href="addvehicle.html">Add a vehicle</a></li>
+          </ul>
+        </nav>
+        <button id="resetbtn" onclick="resetdatabase()">Reset</button>
+      </header>
+
+      <aside>
+        <img src="images/vehiclesearch.jpeg" alt="Vehicle search" />
+      </aside>
+
+      <main>
+        <div>
+          <label for="rego">Search by registration number</label>
+          <input type="text" id="rego" />
+        </div>
+
+        <button id="submit-btn">Submit</button>
+
+        <p id="message" aria-live="polite"></p>
+        <div id="results" aria-live="polite"></div>
+      </main>
+
+      <footer>
+        <p>Palantip Technologies Ltd - 1004 Coursework</p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="js/supabaseclient.js"></script>
+    <script src="js/reset.js"></script>
+    <script src="js/vehicle.js"></script>
+  </body>
+</html>
